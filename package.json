@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "Handlebars  C:/Users/r4_st/github/assignment-5-GrantYang25/views/partials/post.handlebars -f public/postTemplate.js"
+    "build": "Handlebars  C:/Users/r4_st/github/assignment-5-GrantYang25/views/partials/post.handlebars -f public/postTemplate.js",
+    "prestart": "npm run build"
   },
   "repository": {
     "type": "git",
