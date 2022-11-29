@@ -28,6 +28,14 @@ app.get('/', function (req, res, next) {
   res.status(200).render('postPage', postInfo);
 });
 
+app.get('/posts/:n', function (req, res, next) {
+  var i = req.params.n;
+  console.log("== requesting '/posts/" + i + "'");
+
+  if (i >= 0 && i <= 7) { res.status(200).render('partials/post', postData[i]); }
+  else { next(); }
+})
+
 app.listen(port, function () {
   console.log("== Server is listening on port", port);
 });
