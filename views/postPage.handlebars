@@ -1,7 +1,11 @@
 <main class="content">
   {{> filter}}
   <section id="posts">
-
+    {{#each this}}
+        {{#if price}}
+            {{> post}}
+        {{/if}}
+    {{/each}}
   </section>
   {{> sellItem}}
 </main>
