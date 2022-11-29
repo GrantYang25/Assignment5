@@ -4,7 +4,8 @@
   "description": "Handlebars templating",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "Handlebars  C:/Users/r4_st/github/assignment-5-GrantYang25/views/partials/post.handlebars -f public/postTemplate.js"
   },
   "repository": {
     "type": "git",
